@@ -1,0 +1,20 @@
+name: Followup Notifier (cron)
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke Edge Function
+        run: |
+          curl -sS -X POST \
+            "https://rsxrobxbfzdmxyiddtlc.supabase.co/functions/v1/followup-notifier" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{}'
+
+
