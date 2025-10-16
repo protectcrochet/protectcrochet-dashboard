@@ -2,7 +2,7 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
-import { supabaseServer } from '@/lib/supabase'
+import { supabaseServer } from '@/lib/supabase/server'
 import type { ScoutSource } from '@/types/case-scouts'
 
 export async function saveScoutAction(formData: FormData) {

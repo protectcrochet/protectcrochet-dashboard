@@ -4,7 +4,8 @@
 // ================================================================
 import { NextResponse } from 'next/server'
 import z from 'zod'
-import { supabaseServer } from '@/lib/supabase'
+import { supabaseServer } from '@/lib/supabase/server'
+
 
 const BodySchema = z.object({
   scoutId: z.string().uuid().optional(),
