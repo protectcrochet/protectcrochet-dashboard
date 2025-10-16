@@ -1,6 +1,4 @@
 import { supabaseServer } from '@/lib/supabase/server';
-import SearchBox from './_components/SearchBox';
-
 export const revalidate = 0; // datos frescos
 
 export default async function CasesPage({
@@ -34,7 +32,6 @@ export default async function CasesPage({
     <main className="p-6 space-y-4">
       <div className="flex items-center justify-between gap-3">
         <h1 className="text-xl font-semibold">Casos</h1>
-        <SearchBox />
       </div>
 
       <p className="text-sm text-gray-500">
