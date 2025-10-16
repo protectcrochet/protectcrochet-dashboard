@@ -1,23 +1,13 @@
-import CasesView from '@/components/CasesView'
-
-export const metadata = {
-  title: 'Casos — ProtectCrochet',
-}
-
-export default function CasesPage({
-  searchParams,
-}: {
-  searchParams?: { status?: string; q?: string; from?: string; to?: string }
-}) {
+// app/dashboard/page.tsx
+export default function DashboardPage() {
   return (
-    <main className="min-h-dvh p-6 md:p-8">
-      <h1 className="text-2xl font-bold mb-6">Casos</h1>
-      <CasesView
-        initialStatus={searchParams?.status ?? null}
-        initialQ={searchParams?.q ?? ''}
-        initialFrom={searchParams?.from ?? ''}
-        initialTo={searchParams?.to ?? ''}
-      />
+    <main style={{ padding: 24 }}>
+      <h1 style={{ fontSize: 24, fontWeight: 600 }}>Panel ProtectCrochet ✅</h1>
+      <p style={{ color: '#9ca3af' }}>La ruta /dashboard ya debería renderizar sin auth.</p>
+      <p>
+        Probar caso: <a href="/dashboard/cases/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">/dashboard/cases/…</a>
+      </p>
     </main>
-  )
+  );
 }
+

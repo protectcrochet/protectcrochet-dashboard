@@ -1,6 +1,3 @@
-const nextConfig = {
-  experimental: {
-    serverActions: { allowedOrigins: ['localhost:3000'] },
-  },
-}
-export default nextConfig
+import type { NextConfig } from 'next';
+const nextConfig: NextConfig = {};
+export default nextConfig;
