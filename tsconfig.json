@@ -13,15 +13,16 @@
     "strict": true,
     "noEmit": true,
     "incremental": true,
-    "types": [
-      "node"
-    ],
     "baseUrl": ".",
     "paths": {
       "@/*": [
         "*"
       ]
     },
+    "types": [
+      "node",
+      "next"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

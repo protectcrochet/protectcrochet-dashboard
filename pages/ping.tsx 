@@ -1,0 +1,8 @@
+export default function Ping() {
+  return (
+    <div style={{padding: 24}}>
+      <h1>PAGES ROUTER OK</h1>
+      <p>Ruta: /ping</p>
+    </div>
+  );
+}
