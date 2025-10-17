@@ -1,18 +1,9 @@
-// app/layout.tsx
-import type { Metadata } from "next"
-import '../globals.css'
+// app/dashboard/layout.tsx
+import type { ReactNode } from "react"
+import "../globals.css"  // <- OJO: subimos un nivel
 
-export const metadata: Metadata = {
-  title: "ProtectCrochet",
-  description: "Dashboard",
-}
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="es">
-      <body>{children}</body>
-    </html>
-  )
+export default function DashboardLayout({ children }: { children: ReactNode }) {
+  return <section>{children}</section>
 }
 
 
