@@ -1,4 +1,3 @@
-// app/dashboard/page.tsx
 export default function DashboardPage() {
   return (
     <main className="p-6">

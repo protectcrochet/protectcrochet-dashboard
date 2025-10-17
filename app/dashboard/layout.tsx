@@ -1,15 +1,19 @@
-// app/dashboard/layout.tsx
-export const metadata = {
-  title: 'ProtectCrochet — Dashboard',
-};
+// app/layout.tsx
+import type { Metadata } from "next"
+import "./globals.css"
 
-export default function DashboardLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <section style={{ minHeight: '100dvh', padding: 24, background: '#0a0a0a', color: '#e5e7eb' }}>
-      {/* Layout mínimo temporal, sin auth ni sidebar para desbloquear /dashboard */}
-      {children}
-    </section>
-  );
+export const metadata: Metadata = {
+  title: "ProtectCrochet",
+  description: "Dashboard",
 }
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="es">
+      <body>{children}</body>
+    </html>
+  )
+}
+
 
 
